@@ -16,6 +16,7 @@ $("#form").on("submit", (e) => {
   // Frage: Überlege eine Zahl von 1 bis 100.
   // Person gibt Antwort ein
   const eingabe = $("#form input").val();
+  $("#form input").trigger("select").trigger("focus");
 
   const eingegebeneZahl = parseInt(eingabe);
 
