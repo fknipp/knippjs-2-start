@@ -26,5 +26,5 @@ $("#form").on("submit", (e) => {
     $(".output").text("Your input was not a valid number.");
   }
 
-  $("#form input").focus();
+  $("#form input").trigger("select").trigger("focus");
 });
